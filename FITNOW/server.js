@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-const apiKey = 'c753760241msh4aafaa1fda97f81p1b0a40jsnf163a2a6b34f';
+const apiKey = 'Your-API-Key-Here';
 const apiHost = 'exercisedb.p.rapidapi.com';
 
 app.use(express.static(path.join(__dirname, 'public')));
