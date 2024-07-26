@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Cards</title>
+    <link rel= "stylesheet" type= "text/css" href="style.css">
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.351);
+            
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .card h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+            font-family: "Gill Sans", "sans-serif", monospace
+        }
+        .card p {
+            margin: 0 0 10px;
+            font-family: "Trebuchet MS", "sans-serif", monospace
+        }
+        .card:hover {
+            box-shadow: 2px 2px 12px rgb(255, 208, 0);
+            border: 1px solid rgb(255, 208, 0);
+            transform: scale(1.04);
+            transition: all 0.3s ease;
+        }
+        #targetSelect {
+            font-family: 'Arial', sans-serif;
+            border: 4px solid rgb(255, 208, 0);
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+        button {
+            background-color: rgb(255, 208, 0);
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.1);
+            
+        }
+        #targetSelect:hover {
+            border: 4px solid rgb(0, 0, 0);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <select id="targetSelect">
+        <option value="abductors">Abductors</option>
+        <option value="abs">Abs</option>
+        <option value="adductors">Adductors</option>
+        <option value="biceps">Biceps</option>
+        <option value="calves">Calves</option>
+        <option value="cardiovascular system">Cardiovascular System</option>
+        <option value="delts">Deltoids</option>
+        <option value="forearms">Forearms</option>
+        <option value="glutes">Glutes</option>
+        <option value="hamstrings">Hamstrings</option>
+        <option value="lats">Lats</option>
+        <option value="levator scapulae">Levator Scapulae</option>
+        <option value="pectorals">Pectorals</option>
+        <option value="quads">Quads</option>
+        <option value="serratus anterior">Serratus Anterior</option>
+        <option value="spine">Spine</option>
+        <option value="traps">Trapezius</option>
+        <option value="triceps">Triceps</option>
+        <option value="upper back">Upper Back</option>
+    </select>
+    <button onclick="loadExercises()">Load Exercises</button>
+    <div id="exerciseContainer">
+        <!-- Exercise Cards Will Be Inserted Here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
