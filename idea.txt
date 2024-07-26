@@ -1,0 +1,4 @@
+-Create a workout planner based on the body part you want to exercise
+-Show the exercsies and give instructions
+-Meal planner maybeee
+-Add cool homepage
