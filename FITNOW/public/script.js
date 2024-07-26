@@ -5,7 +5,7 @@ function loadExercises() {
         .then(response => response.json())
         .then(exercises => {
             const exerciseContainer = document.getElementById('exerciseContainer');
-            exerciseContainer.innerHTML = ''; // Clear existing content
+            exerciseContainer.innerHTML = ''; 
 
             exercises.forEach(exercise => {
                 const gif = exercise.gifUrl;
